@@ -1,0 +1,14 @@
+
+name: 'leqaa_sales'
+version: '1.0.0'
+config-version: 2
+profile: 'leqaa_sales'
+
+model-paths: ["models"]
+
+models:
+  leqaa_sales:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
