@@ -1,4 +1,3 @@
-
 name: 'leqaa_sales'
 version: '1.0.0'
 config-version: 2
@@ -9,6 +8,10 @@ model-paths: ["models"]
 models:
   leqaa_sales:
     staging:
+      +schema: SILVER
+      +database: LEQAA
       +materialized: view
     marts:
+      +schema: SILVER
+      +database: LEQAA
       +materialized: table
